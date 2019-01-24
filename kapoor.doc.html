@@ -1,0 +1,54 @@
+<html>
+<head>
+<title> Hotel booking form </title>
+<script language="JavaScript" type ="text/javascript">
+function kapoor(form)
+{
+document.write("your booking is successful");
+}
+</script>
+</head>
+<h1><marquee scrolldelay="4"><font color="darkblue"><b> WELCOME TO KAPOOR s RESIDENCY</b></font></marquee></h1>
+<body background="kapoor.jpg">
+<fieldset>
+<center>
+<b><label for="name">Name:</label><input type="text" name="username" id="name" required autofocus placeholder="your username" pattern="[a-zA-Z]{3,}" title="please enter in more than three letters"><b>
+<br> </br>
+<label for="email">Email:</label><input type="text" name="email" id="email" required placeholder="your email"pattern="[a-zA-Z]{3,}@"[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}"title="please enter in a valid email address">
+<br> </br>
+<label for="phone">Phone:</label><input type="tel" name="phone" id="phone" id="phone" required placeholder ="please enter in your phone number"pattern="[0-9]{4} [0-9]{3} [0-9]{3}" title="please enter in a phone number in this format :#### ### ###">
+<br> </br>
+<label for="state">State:</label><select name="country" required>
+<option value=""> </option>
+<option value="TN">TN</option>
+<option value="AP">AP</option>
+<option value="MP">MP</option>
+<option value="UP">UP</option>
+</select>
+</fieldset>
+<br>
+<form>
+<fieldset>
+<legend>Booking Details: </legend>
+<label for="date">check in date: </label><input id="date" type="date" name="date" min="2016-12-06">
+<br> </br>
+<label for="date">check out date: </label><input id="date" type="date" name="date" min="2016-12-08">
+<br> </br>
+<label for="numberOfGuests">Number of Guests </label><input id="numberOfGuests" type="numberOfGuests"name="numberOfGuests" min="1"max="6">
+<p>Do you required meals?</p>
+<label for="yesMeals">Yes: </label><input id="yesMeals" type="radio"name="meals"value="yesMeals">
+<label for="noMeals">No: </label><input id="noMeals" type="radio"name="meals"value="noMeals">
+<br>
+<p> room preference AC </p>
+<label for="yesAC">Yes: </label><input id="yesAC" type="radio"name="AC"value="yesAC">
+<label for="NOAC">NO: </label><input id="yesAC" type="radio"name="AC"value="NOAC">
+<br> </br>
+<label for="balcony">Do you require a balcony? </label><input id="balcony"type="checkbox"name="balcony"value="yes"checked>
+<br> </br>
+<label for="Number of rooms">Number of rooms </label><input id="Number of rooms" type="Number of rooms"name="number of rooms" min="1"max="9">
+<br> </br>
+<input type="button" name="submit" value="Submit" onclick="kapoor(this.form)"/>
+</fieldset>
+</form>
+</body>
+</html>
